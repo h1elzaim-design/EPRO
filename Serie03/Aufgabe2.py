@@ -8,3 +8,4 @@ elif n % 4 == 0:
     print(n, "ist ein Schaltjahr")
 else:
     print(n, "ist kein Schaltjahr")
+    
