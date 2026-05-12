@@ -12,5 +12,5 @@ def merge(left: list, right: list) -> list:
     result.extend(right[y:])
     return result
 
-print(merge([1, 3, 5, 7, 10, 13], [2, 4, 6, 8, 9, 11, 12]))
+print(merge([1, 3, 5, 7, 10, 13], [2, 4, 6, 8, 9, 11, 12, 14, 15]))
     
