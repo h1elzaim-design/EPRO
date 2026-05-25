@@ -11,4 +11,4 @@ print(rich_when(10000, 9, 5000))
 print(rich_when(10000, 8, 5000))
 print(rich_when(10000, 7, 5000))
 print(rich_when(10000, 6, 5000))
- 
+  

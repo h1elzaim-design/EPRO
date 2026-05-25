@@ -9,7 +9,7 @@ def eratosthenes(n):
         prime = numbers[i]
         numbers = [num for num in numbers if num % prime != 0 or num == prime]
         i += 1
-    return numbers
+    return numbers 
 
 
 print(eratosthenes(17))

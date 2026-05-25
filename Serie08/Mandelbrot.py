@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-def mandelbrot(z: complex, upperlim: int = 10) -> int:
+def mandelbrot(z: complex, upperlim: int = 30) -> int:
     a = 0
     for n in range(upperlim):
         if abs(a) > 2:
@@ -8,8 +8,8 @@ def mandelbrot(z: complex, upperlim: int = 10) -> int:
         a = a**2 + z
     return upperlim
 
-nx = 100 # take nx many points in x-direction
-ny = 100 # take ny many points in y-direction for z = x + iy
+nx = 1000 # take nx many points in x-direction
+ny = 1000 # take ny many points in y-direction for z = x + iy
 x = np.linspace(-2, 0.5, nx)
 y = np.linspace(-1, 1, ny)
 F = np.empty((ny, nx), dtype=float)
