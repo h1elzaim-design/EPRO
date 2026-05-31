@@ -8,8 +8,8 @@ def mandelbrot(z: complex, upperlim: int = 30) -> int:
         a = a**2 + z
     return upperlim
 
-nx = 1000 # take nx many points in x-direction
-ny = 1000 # take ny many points in y-direction for z = x + iy
+nx = 100 # take nx many points in x-direction
+ny = 100 # take ny many points in y-direction for z = x + iy
 x = np.linspace(-2, 0.5, nx)
 y = np.linspace(-1, 1, ny)
 F = np.empty((ny, nx), dtype=float)
@@ -19,4 +19,5 @@ for i, yy in enumerate(y):
         F[i, k] = mandelbrot(z)
 X, Y = np.meshgrid(x, y)
 plt.pcolormesh(X, Y, F)
+plt.savefig('mandelbrot.png', dpi=150)
 plt.show()
