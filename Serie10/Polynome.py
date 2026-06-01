@@ -28,6 +28,8 @@ class Polynom:
         x2 = (-b - disk**0.5)/(2*a)
         return (x1, x2)
 
+def __add__(self, other):
+    
 
 
 
