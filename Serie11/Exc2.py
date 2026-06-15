@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 with open('/home/hani/Desktop/EPRO/Serie11/data.txt', 'r') as f:
     text = f.read()
 freq = {}
@@ -7,7 +8,7 @@ sorted_freq = dict(sorted(freq.items(), key=lambda x: x[1], reverse=True))
 
 plt.bar(sorted_freq.keys(), sorted_freq.values())
 
-import matplotlib.pyplot as plt
+
 
 plt.xlabel('Zeichen')
 plt.ylabel('Häufigkeit')

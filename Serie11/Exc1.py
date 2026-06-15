@@ -21,6 +21,7 @@ class MyFunction:
             x1 = self.a #kein x angegeben --> nimmt die untere/obere Grenze
         if x2 is None:
             x2 = self.b
+        
         x_vals = np.linspace(x1, x2, 100)
         y_vals = [self(x) for x in x_vals]
 
